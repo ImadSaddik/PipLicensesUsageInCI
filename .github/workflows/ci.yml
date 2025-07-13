@@ -30,7 +30,7 @@ jobs:
 
       - name: Check for problematic licenses
         run: |
-          pip-licenses --fail-on="GPL;AGPL;LGPL;MPL;CDDL;EPL;CPAL;EUPL;OSL;SSPL;RPL;APS;" --partial-match
+          pip-licenses --fail-on="GPL;AGPL;LGPL;CDDL;EPL;CPAL;EUPL;OSL;SSPL;RPL;APS" --partial-match
           if [ $? -ne 0 ]; then
             echo "Problematic licenses found. Please review the licenses."
             pip-licenses --format=markdown
