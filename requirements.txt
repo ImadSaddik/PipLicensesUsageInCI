@@ -1,0 +1,9 @@
+django
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+requests
+tqdm
+pip-licenses
